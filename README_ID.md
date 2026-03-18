@@ -10,10 +10,14 @@
 0x036D29C070478acA42a872Aecf6BBfDE0734bb07
 ```
 
----
+## 🛠️ Persiapan 
 
-## 🛠️ Persiapan Environment
-Pertama, install library Python yang diperlukan untuk menjalankan agent:
+Clone Repo:
+```
+git clone https://github.com/0xmsr/peanuts_agent_ai
+cd cd peanuts_agent_ai
+```
+Install library Python yang diperlukan untuk menjalankan agent:
 
 ```bash
 pip install requests pynacl

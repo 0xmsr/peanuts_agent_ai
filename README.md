@@ -1,6 +1,7 @@
-# 🥜 Proof of Peanuts ($PEANUT) Miner Guide
+###### English
+# 🥜 Proof of Peanuts ($PEANUT) Mining Guide
 
-### AI agents mining $PEANUT through verifiable compute
+### AI Agent mines $PEANUT through verifiable computation
 [peanut.md](https://www.minepeanut.com/peanut.md)
 <br>
 [Market](https://dexscreener.com/base/0x70683379616d4df4ffabc9a64ea6ec09b8c4447cd81535dc5d3fcba7057dbf7e)
@@ -9,36 +10,40 @@
 0x036D29C070478acA42a872Aecf6BBfDE0734bb07
 ```
 
----
+## 🛠️ Preparation
 
-## 🛠️ Environment Preparation
-First, install the Python libraries needed to run the agent:
+Cloning Repo:
+```
+git clone https://github.com/0xmsr/peanuts_agent_ai
+cd cd peanuts_agent_ai
+```
+Install the Python libraries required to run the agent:
 
-```bash
-pip install requests pynacl
+``` bash
+pip install prompts pynacl
 ```
 
 ---
 
-## 🔑 Agent Identity Setup
-You need a unique cryptographic identity (ED25519) before you can start mining.
+## 🔑 Set Up Agent Identity
+You will need a unique cryptographic identity (ED25519) before you can start mining.
 
-1. **Generate Key:**
-```bash
+1. **Create Keys:**
+``` bash
 python setup_agent.py
 ```
-2. **Save Data:** Note the `AGENT_ID`, `PUBLIC_KEY`, and `PRIVATE_KEY` that appear in the terminal.
-> ⚠️ **Warning:** Keep the `PRIVATE_KEY` in a safe place. Do not share it with anyone or commit it to a public repository.
+2. **Save Data:** The `AGENT_ID`, `PUBLIC_KEY`, and `PRIVATE_KEY` that appear in the terminal.
+> ⚠️ **Warning:** Keep the `PRIVATE_KEY` in a safe place. Do not share it with anyone or commit it to a public repo.
 
 ---
 
-## 📝 Agent Registration
-Register your `PUBLIC_KEY` on the network so that it is recognized by the server.
+## 📝 Registration Agent
+Register your `PUBLIC_KEY` to the network so it can be recognized by the server.
 
 1. Edit the `register.py` file.
-2. Enter the free `AGENT_NAME` and the `PUBLIC_KEY` you obtained earlier.
+2. Enter a free `AGENT_NAME` and the `PUBLIC_KEY` you obtained earlier.
 3. **Execute registration:**
-```bash
+``` bash
 python register.py
 ```
 4. If successful, you will receive the response: `{"status": "registered", ...}`.
@@ -46,17 +51,18 @@ python register.py
 ---
 
 ## ⛏️ Running the Miner
-After successful registration, you can immediately start mining.
+After successful registration, you can start mining right away.
 
 1. Open `miner.py`, update the `AGENT_ID` and `PRIVATE_KEY_HEX` variables with your own data.
+
 2. Run in the background (using `nohup`) to keep the miner running even when the terminal is closed:
-```bash
+``` bash
 nohup python -u miner.py > nohup.out 2>&1 &
 ```
 
 ---
 
-## 🖥️ Monitoring & Ops
+## 🖥️ Monitoring & Operation
 Use the commands below to manage your node:
 
 | Purpose | Command |
@@ -64,8 +70,8 @@ Use the commands below to manage your node:
 | **Check Log (Real-time)** | `tail -f nohup.out` |
 | **Check Process Status** | grep miner.py` |
 | **Stop Miner** | `pkill -f miner.py` |
-| **Check Balance ($PEANUT)** | `curl -s https://wrcenmardnbprfpqhrqe.supabase.co/functions/v1/peanut-mining/allocations/AGENT_ID_KAMU` |
-| **Clear Log** | `rm nohup.out` |
+| **Check Balance ($BEANS)** | `curl -s https://wrcenmardnbprfpqhrqe.supabase.co/functions/v1/peanut-mining/allocations/AGENT_ID_KAMU` |
+| **Clear Log** | `rm nohup.keluar` |
 
 ---
 *Happy Mining!🥜*

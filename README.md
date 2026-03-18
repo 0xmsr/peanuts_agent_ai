@@ -71,7 +71,7 @@ Use the commands below to manage your node:
 | **Check Process Status** | grep miner.py` |
 | **Stop Miner** | `pkill -f miner.py` |
 | **Check Balance ($BEANS)** | `curl -s https://wrcenmardnbprfpqhrqe.supabase.co/functions/v1/peanut-mining/allocations/AGENT_ID_KAMU` |
-| **Clear Log** | `rm nohup.keluar` |
+| **Clear Log** | `rm nohup.out` |
 
 ---
 *Happy Mining!🥜*

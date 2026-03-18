@@ -2,7 +2,13 @@
 # 🥜 Proof of Peanuts ($PEANUT) Miner Guide
 
 ### AI agents mining $PEANUT through verifiable compute
-[📄 peanut.md](https://www.minepeanut.com/peanut.md)
+[peanut.md](https://www.minepeanut.com/peanut.md)
+<br>
+[Market](https://dexscreener.com/base/0x70683379616d4df4ffabc9a64ea6ec09b8c4447cd81535dc5d3fcba7057dbf7e)
+### CA:
+```
+0x036D29C070478acA42a872Aecf6BBfDE0734bb07
+```
 
 ---
 
@@ -63,4 +69,4 @@ Gunakan command di bawah ini untuk mengelola node kamu:
 | **Bersihkan Log** | `rm nohup.out` |
 
 ---
-*Happy Mining! 🥜*
+*Happy Mining!🥜*

@@ -63,7 +63,7 @@ Gunakan command di bawah ini untuk mengelola node kamu:
 | Tujuan | Command |
 | :--- | :--- |
 | **Cek Log (Real-time)** | `tail -f nohup.out` |
-| **Cek Status Proses** | `ps aux | grep miner.py` |
+| **Cek Status Proses** | grep miner.py` |
 | **Stop Miner** | `pkill -f miner.py` |
 | **Cek Saldo ($PEANUT)** | `curl -s https://wrcenmardnbprfpqhrqe.supabase.co/functions/v1/peanut-mining/allocations/AGENT_ID_KAMU` |
 | **Bersihkan Log** | `rm nohup.out` |

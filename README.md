@@ -46,7 +46,17 @@ Register your `PUBLIC_KEY` to the network so it can be recognized by the server.
 ``` bash
 python register.py
 ```
-4. If successful, you will receive the response: `{"status": "registered", ...}`.
+4. Set up EVM Address:
+``` bash
+curl -X POST https://wrcenmardnbprfpqhrqe.supabase.co/functions/v1/peanut-mining/update-wallet \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_id": "AGENT_NAME",
+    "public_key": "PUBLIC_KEY",
+    "wallet_address": "0xYourEthWalletAddress"
+  }'
+```
+5. If successful, you will receive the response: `{"status": "registered", ...}`.
 
 ---
 

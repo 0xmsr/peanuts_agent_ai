@@ -15,7 +15,7 @@
 Clone Repo:
 ```
 git clone https://github.com/0xmsr/peanuts_agent_ai
-cd cd peanuts_agent_ai
+cd peanuts_agent_ai
 ```
 Install library Python yang diperlukan untuk menjalankan agent:
 
